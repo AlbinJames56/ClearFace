@@ -5,6 +5,7 @@ import Header from "./Pages/Header";
 import LandingPage from "./Pages/LandingPage";
 import Home from "./Pages/Home";
 import LoadingPage from "./Components/LoadingPage";
+import ResultPage from "./Pages/ResultPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
         <Route path="/loading" element={<LoadingPage />} />
+        <Route path='/result' element={<ResultPage/>}/>
         <Route path='/*' element={<Navigate to={'/'}/>}/>
       </Routes>
       <Footer/>

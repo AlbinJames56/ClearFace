@@ -8,14 +8,25 @@ function Home() {
 
   const handleFileUpload = (e) => {
     setFile(e.target.files[0]);
-    
-    // Redirect to the loading page
+
+    // Navigate to the loading page
     navigate("/loading");
 
-    // Simulate video processing delay
+    // Simulate video processing delay or call your SRGAN processing function here
     setTimeout(() => {
-      // Here you can redirect to another page after processing or show the result
-    }, 3000); // Change this value according to your processing time
+      // Simulate processed data
+      const mockProcessedData = {
+        beforeVideoUrl: "path/to/before/video.mp4",
+        afterVideoUrl: "path/to/after/video.mp4",
+        originalResolution: "480x360",
+        enhancedResolution: "1080x720",
+        processingTime: 45,
+        qualityMetrics: "PSNR: 30dB, SSIM: 0.85"
+      };
+
+      // Navigate to the result page with processed data
+      navigate("/result", { state: { processedData: mockProcessedData } });
+    }, 3000); // Simulate processing time
   };
 
   return (

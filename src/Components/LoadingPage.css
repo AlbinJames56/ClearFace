@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  /* loading Page */
+  .landingPage{
+    background-color: rgb(238, 235, 231);
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    overflow: hidden;
+  }
+  .loadingBundle{
+    width: 80px;
+    /* border: 1px red solid; */
+    height: 80px;
+    position: relative;
+  }
+  .loadingBun{
+    width: 20px;
+    height: 80px;
+    /* border: 1px blue solid; */
+    position: absolute;
+  }
+  .loadingCircle{
+    background-color: grey;
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .loadingBun1{
+    transform: rotate(0deg);
+  }
+  .loadingBun2{
+    transform: rotate(60deg);
+    opacity: 0.9;
+  }
+  .loadingBun3{
+    transform: rotate(120deg);
+    opacity: 0.8;
+  }
+  .loadingBun4{
+    transform: rotate(180deg);
+    opacity: 0.7;
+  }
+  .loadingBun5{
+    transform: rotate(240deg);
+    opacity: 0.6;
+  }
+  .loadingBun6{
+    transform: rotate(300deg);
+    opacity: 0.5;
+  }
+  .loadingText{
+    font-size: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .loadingText span {
+    display: inline-block;
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  .centerCircle{
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+ 
+  .content{
+    display: none;
+  }
